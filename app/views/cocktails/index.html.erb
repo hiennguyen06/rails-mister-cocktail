@@ -1,0 +1,27 @@
+<div class ="banner align-items-center">
+  <div class="container d-flex column justify-content-center align-items-center">
+    <div>
+      <h1 class="mb-1">Cocktail<br>Cabinet</h1>
+      <p class="mb-4">Make perfect cocktails</p>
+      <a class="btn-show mr-2" style="color: #54646f">Show</a><%= link_to 'Create Cocktail', new_cocktail_path %>
+    </div>
+    <div>
+      <img src="https://cdn.dribbble.com/users/2367334/screenshots/6219497/dive_drib_gif2.gif" alt="banner" style="width: 700px">
+    </div>
+  </div>
+</div>
+
+<div class="section-show">
+  <div class="container card-container">
+    <% @cocktails.each do |cocktail| %>
+      <div class="card-trip mb-4">
+          <img src="https://cdn.dribbble.com/users/26684/screenshots/6752299/mojitodribbble_4x.png">
+        <div class="card-trip-infos">
+          <div>
+            <h2><%= link_to cocktail.name, cocktail %></h2>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>

@@ -1,0 +1,15 @@
+
+
+<div class="new-banner" style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(https://cdn.dribbble.com/users/1885333/screenshots/6707832/summer.png">
+
+  <div class="form-container row justify-content-center align-items-center p-4">
+    <div class="form col-4 mt-5 ">
+        <%= link_to 'Back', cocktails_path, :class => "back-btn" %>
+    <h1 class="mb-4 mt-5">Add a new cocktail</h1>
+      <%= simple_form_for(@cocktail) do |f| %>
+        <%= f.input :name, :class => "create" %>
+        <%= f.submit "Create Cocktail", :class => "create" %>
+      <% end %>
+    </div>
+  </div>
+</div>

@@ -15,12 +15,8 @@ Ingredient.create(name: "ice")
 Ingredient.create(name: "soda")
 Ingredient.create(name: "cola")
 Ingredient.create(name: "mint leaves")
-
-Cocktail.create(name: "Negroni")
-Cocktail.create(name: "Martini")
-Cocktail.create(name: "Bloody Mary")
-Cocktail.create(name: "Old Fashion")
-Cocktail.create(name: "Mojito")
+Ingredient.create(name: "lime cordial")
+Ingredient.create(name: "cranberry juice")
 
 puts "Finished"
 

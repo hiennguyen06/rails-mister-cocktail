@@ -3,7 +3,7 @@
     <div>
       <h1 class="mb-1">Cocktail<br>Cabinet</h1>
       <p class="mb-4">Make perfect cocktails</p>
-      <a class="btn-show mr-2" style="color: #54646f">Show</a><%= link_to 'Create Cocktail', new_cocktail_path %>
+      <a class="btn-show mr-2" href="#show-cocktails" style="color: #54646f">Show</a><%= link_to 'Create Cocktail', new_cocktail_path %>
     </div>
     <div>
       <img src="https://cdn.dribbble.com/users/2367334/screenshots/6219497/dive_drib_gif2.gif" alt="banner" style="width: 700px">
@@ -11,7 +11,7 @@
   </div>
 </div>
 
-<div class="section-show">
+<div class="section-show" id="show-cocktails">
   <div class="container card-container">
     <% @cocktails.each do |cocktail| %>
       <div class="card-trip mb-4">

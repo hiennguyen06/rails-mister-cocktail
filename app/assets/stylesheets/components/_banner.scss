@@ -96,5 +96,17 @@
   margin-top: 2rem;
 }
 
+.show-banner {
+  background-color: #fac9b8;
+  height: 100vh;
+
+  h1 {
+    margin: 0;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    font-size: 72px;
+    font-weight: bold;
+  }
+}
 
 
